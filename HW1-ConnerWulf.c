@@ -9,7 +9,7 @@ int main(int argc, char const *argv[]) {
   const int SIZE = 2;
   int value = atoi(argv[1]);
   printf("%d\n", value);
-  for (int i = 1; i >= SIZE; i++)
+  for (int i = 1; i <= SIZE; i++)
   {
       pid_t pid = fork();
 
