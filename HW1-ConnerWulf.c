@@ -35,7 +35,7 @@ int main(int argc, char const *argv[]) {
           printf("From Child %d n=%d, ", i, value);
         }
 
-        return EXIT_SUCCESS;
+        return;
       }
       else
       {
