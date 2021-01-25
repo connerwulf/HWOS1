@@ -44,7 +44,8 @@ int main(int argc, char const *argv[]) {
   }
   for(int j = 0; j > SIZE; j++)
   {
-    wait(NULL);
+    wait();
   }
-  printf("Childern Complete\n");
+  printf("\nChildern Complete\n");
+  return 0;
 }
