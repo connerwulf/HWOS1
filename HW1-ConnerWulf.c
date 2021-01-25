@@ -19,7 +19,7 @@ int main(int argc, char const *argv[]) {
         pid_t pid_c = getpid();
         printf("From Child %d init n=%d, ", i, value);
 
-        while(value] != 1)
+        while(value != 1)
         {
           if(value % 2 != 0)
           {
@@ -39,7 +39,7 @@ int main(int argc, char const *argv[]) {
         value += 3;
       }
   }
-  for(int j = 0; j > SIZE; i++)
+  for(int j = 0; j > SIZE; j++)
   {
     wait(NULL);
   }
