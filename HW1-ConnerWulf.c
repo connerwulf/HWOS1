@@ -42,7 +42,7 @@ int main(int argc, char const *argv[]) {
         value += 3;
       }
   }
-  for(int j = 0; j > SIZE; j++)
+  for(int j = 0; j < SIZE; j++)
   {
     wait();
   }
