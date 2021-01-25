@@ -8,7 +8,7 @@ int main(int argc, char const *argv[]) {
 
   const int SIZE = 2;
   int value = atoi(argv[1]);
-  if(0 > value > 40 )
+  if(value < 0 || value > 40)
   {
     printf("Value must be between 0 and 40");
     return 0;
