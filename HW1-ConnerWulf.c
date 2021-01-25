@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys.h>
+
 int main(int argc, char const *argv[]) {
   const int SIZE = 2;
   int childs[SIZE] = [atoi(argv[1]), atoi(argv[1]) + 3)];
