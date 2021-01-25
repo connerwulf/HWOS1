@@ -8,7 +8,11 @@ int main(int argc, char const *argv[]) {
 
   const int SIZE = 2;
   int value = atoi(argv[1]);
-
+  if(0 < value < 40 )
+  {
+    printf("Value must be between 0 and 40");
+    return 0;
+  }
   for (int i = 1; i <= SIZE; i++)
   {
       pid_t pid = fork();
@@ -47,6 +51,6 @@ int main(int argc, char const *argv[]) {
   {
     wait(NULL);
   }
-  printf("\nChildern Complete\n");
+  printf("Childern Complete\n");
   return 0;
 }
