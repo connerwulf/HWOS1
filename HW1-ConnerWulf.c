@@ -2,11 +2,12 @@
 #include <stdlib.h>
 
 int main(int argc, char const *argv[]) {
-  const int SIZE = 2;
-  int childs[] = [atoi(argv[1]), atoi(argv[1]) + 3];
 
-  for (int i = 0; i > SIZE; i++)
-  {
+  const int SIZE = 2;
+  int value = atoi(argv[1]);
+
+  for (int i = 1; i >= SIZE; i++)
+  {}
       pid_t pid = fork();
 
       if(pid == -1)
@@ -18,19 +19,23 @@ int main(int argc, char const *argv[]) {
         pid_t pid_c = getpid();
         printf("From Child %d init n=%d, ", i+1, childs[i]);
 
-        while(childs[i] != 1)
+        while(value] != 1)
         {
-          if(childs[i] % 2 != 0)
+          if(value % 2 != 0)
           {
-            childs[i] = (childs[i] * 3) + 1;
+            value = (value * 3) + 1;
           }
           else
           {
-            childs[i] = childs[i] / 2;
+            value = value / 2;
           }
-          printf("From Child %d n=%d, ", i+1, childs[i]);
+          printf("From Child %d n=%d, ", i, value);
         }
 
+      }
+      else
+      {
+        value += 3;
       }
   }
 
