@@ -25,7 +25,7 @@ int main(int argc, char const *argv[]) {
       else if(pid == 0)
       {
         pid_t pid_c = getpid();
-        printf("From Child %d init n=%d, ", i, value);
+        printf("\tFrom Child %d init n=%d, ", i, value);
 
         while(value != 1)
         {
@@ -51,6 +51,6 @@ int main(int argc, char const *argv[]) {
   {
     wait(NULL);
   }
-  printf("Childern Complete\n");
+  printf("\tChildern Complete\n");
   return 0;
 }
