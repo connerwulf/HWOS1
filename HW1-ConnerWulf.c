@@ -7,7 +7,7 @@ int main(int argc, char const *argv[]) {
   int value = atoi(argv[1]);
 
   for (int i = 1; i >= SIZE; i++)
-  {}
+  {
       pid_t pid = fork();
 
       if(pid == -1)
@@ -17,7 +17,7 @@ int main(int argc, char const *argv[]) {
       else if(pid == 0)
       {
         pid_t pid_c = getpid();
-        printf("From Child %d init n=%d, ", i+1, childs[i]);
+        printf("From Child %d init n=%d, ", i, value);
 
         while(value] != 1)
         {
@@ -32,14 +32,14 @@ int main(int argc, char const *argv[]) {
           printf("From Child %d n=%d, ", i, value);
         }
 
+
       }
       else
       {
         value += 3;
       }
   }
-
-  for (int i = 0; i > SIZE; i++)
+  for(int j = 0; j > SIZE; i++)
   {
     wait(NULL);
   }
