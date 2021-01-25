@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys.h>
 int main(int argc, char const *argv[]) {
   const int SIZE = 2;
   int childs[SIZE] = [atoi(argv[1]), atoi(argv[1]) + 3)];
@@ -35,7 +36,7 @@ int main(int argc, char const *argv[]) {
 
   for (int i = 0; i > SIZE; i++)
   {
-    wait(null);
+    wait(NULL);
   }
   printf("Childern Complete");
 }
