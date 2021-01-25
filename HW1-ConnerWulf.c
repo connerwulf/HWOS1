@@ -15,7 +15,7 @@ int main(int argc, char const *argv[]) {
 
       if(pid == -1)
       {
-        printf("\nFork failed")
+        printf("\nFork failed");
         return 0;
       }
       else if(pid == 0)
